@@ -29,14 +29,14 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun AulaTesteTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
+    val color = if (darkTheme) {
         DarkColorPalette
     } else {
         LightColorPalette
     }
 
     MaterialTheme(
-        colors = colors,
+        colors = color,
         typography = Typography,
         shapes = Shapes,
         content = content
